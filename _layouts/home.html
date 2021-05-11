@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  <img src="/assets/profile.JPG" alt="" height = "500" ALIGN="right" HSPACE="50"/>
+  <h1>Hi, I'm Xinyi (Isabella) Qiao and I'm a software developer.</h1>
+  <p>It's nice to meet you!</p>
+  <br clear="right">
+  <br>
+  {{ content }}
+  <style>
+  h1 {
+    font-family: Arial;
+    font-size: 16pt;
+    color: #696969
+  }
+  p {
+    font-family: Arial;
+    font-size: 14pt;
+    color: #696969
+  }
+  </style>
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%}
+</div>
