@@ -6,4 +6,4 @@ categories: photo
 ---
 Nice to meet you! I will be sharing computer science tutorials, music videos, blog posts, traveling pictures and more! 
 
-![image](/assets/post1.JPG)
+![image](/assets/img/post1.JPG)

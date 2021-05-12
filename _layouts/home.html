@@ -3,28 +3,16 @@ layout: default
 ---
 
 <div class="home">
+  
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-  <img src="/assets/profile.JPG" alt="" height = "500" ALIGN="right" HSPACE="50"/>
+  <img src="/assets/img/profile.JPG" alt="" height = "500" ALIGN="right"/>
   <h1>Hi, I'm Xinyi (Isabella) Qiao and I'm a software developer.</h1>
   <p>It's nice to meet you!</p>
   <br clear="right">
   <br>
   {{ content }}
-  <style>
-  h1 {
-    font-family: Arial;
-    font-size: 16pt;
-    color: #696969
-  }
-  p {
-    font-family: Arial;
-    font-size: 14pt;
-    color: #696969
-  }
-  </style>
-
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
@@ -45,4 +33,16 @@ layout: default
     </ul>
 
   {%- endif -%}
+
+  <div class="loader-wrapper">
+    <img src="/assets/img/bird.gif" alt="loader" height="500">
+  </div>
+  <script>
+    $(window).on("load", function() {
+      setTimeout(function(){
+        $(".loader-wrapper").fadeOut("slow");
+      }, 1500);
+    });
+
+  </script>
 </div>
