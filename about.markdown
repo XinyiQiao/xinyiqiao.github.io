@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Hi! My name is Isabella Xinyi Qiao and I'm a software developer. 
 <p> You can view my resume here. <a href="/assets/data/Isabella_Xinyi_Qiao_Resume.pdf">Resume</a></p>
-![image](/assets/img/about4.jpg){:width="500px"}
+![image](/assets/img/about4.JPG){:width="500px"}
 
 I'm from Xi'an China, currently attending [University of Michigan - Ann Arbor](https://umich.edu/), majoring in Computer Science. I teach EECS 376: Foundations of Computer Science. I'm a passionate software developer and work at [Goldman Sachs](https://www.goldmansachs.com/) and [Alvarez & Marsal](https://www.alvarezandmarsal.com/) where I develop applications for valuation and financial reporting. 
 
