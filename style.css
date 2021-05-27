@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url(img/background.JPG);
+    background-repeat: no-repeat;
+}
+
+.box{
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: black;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.box-img{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    height: auto;
+}
+
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100px;
+}
+
+.box h5 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 100px;
+}
+
